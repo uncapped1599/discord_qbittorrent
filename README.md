@@ -8,8 +8,9 @@ This is a simple bash script for sending notifications to a Discord webhook for 
 * Will automatically convert size from bytes to kB, MB or GB based on the size of the torrent. Useful if you are downloading shows, movies and books in various sizes. 
 * Tested in qBittorrent for docker but should work in all versions.
 
-![Screenshot of Radarr Discord Notification](/assets/radarr.png)
-![Screenshot of Readarr Discord Notification](/assets/readarr.png)
+<img src="/assets/radarr.png" width="50%">
+<img src="/assets/readarr.png" width="50%">
+<img src="/assets/4k.png" width="50%">
 
 ## Usage
 1. Create a Discord webhook URL - [instructions](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
@@ -23,4 +24,4 @@ This is a simple bash script for sending notifications to a Discord webhook for 
 7. Done!
 
 ## Tip: adding categories to watched folders in qBittorrent (docker)
-If you're using qBittorrent through [linuxserver's docker](https://hub.docker.com/r/linuxserver/qbittorrent), the webUI doesn't surface a way to add categories to watched folders. To do this, you have to edit the `watched_folders.json` file located in the containers config folder. The path will be something like `containerConfig/qbittorrent/qBittorrent/watched_folders.json`.
+If you're using qBittorrent through [linuxserver's container](https://hub.docker.com/r/linuxserver/qbittorrent), the webUI doesn't surface a way to add categories to watched folders. To do this, you have to edit the `watched_folders.json` file located in the containers config folder. The path will be something like `containerConfig/qbittorrent/qBittorrent/watched_folders.json`.
