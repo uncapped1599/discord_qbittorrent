@@ -17,7 +17,7 @@ This is a simple bash script for sending notifications to a Discord webhook for 
 2. Download the bash script and make it available to qBittorrent. For docker instances, ensure it is placed in a mounted folder.
 3. Input your Discord webhook URL at the top of the script.
 4. Adapt the categories to align with your qBittorrent instance. For example, besides the usual sonarr, radarr categories, I have watch folders for manually adding torrents which I like to use for notifications.
-5. You can test the script by running it in your terminal with some test parameters. For example: <code>bash /path/to/script/discord_qbit_notification.sh TestName 9999922 12 tracker.com radarr /savepath</code>. If successful you should see confirmation in the terminal along with a discord notification.
+5. You can test the script by running it in your terminal with some test parameters. For example: <code>bash /path/to/script/discord_qbit_notification.sh TestName 9999922 12 tracker.com radarr savepath</code>. If successful you should see confirmation in the terminal along with a discord notification.
 6. Add the following to 'run external program on torrent completion' under your qBittorrent settings:
 <code>/path/to/script/discord_qbit_notification.sh "%N" "%Z" "%C" "%T" "%L" "%D"</code>
 ***Note:*** The order of the parameters is important as they are captured accordingly in the script, make sure to edit accordingly if adapting the script for different parameters.
