@@ -4,7 +4,7 @@ This is a simple bash script for sending notifications to a Discord webhook for 
 ## Features
 * Uses embed styling for a nicer look. Read more about Discord embeds [here](https://birdie0.github.io/discord-webhooks-guide/structure/embeds.html)
 * Can be adapted to create different messages based on qBittorrent categories (optional).
-* Easily expanded to capture other information from [qBittorrent](https://github.com/qbittorrent/qBittorrent/wiki/External-programs:-How-to)
+* Easily expanded to capture other parameters from [qBittorrent.](https://github.com/qbittorrent/qBittorrent/wiki/External-programs:-How-to)
 * Will automatically convert size from bytes to kB, MB or GB based on the size of the torrent. Useful if you are downloading shows, movies and books in various sizes. 
 * Tested in qBittorrent for docker but should work in all versions.
 
