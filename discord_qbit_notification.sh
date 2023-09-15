@@ -79,30 +79,30 @@ payload='{
                 "name": "qBittorrent",
                 "icon_url": "https://i.imgur.com/6LTKLgZ.jpg"
             },
-            "title": "'"$download_type"' download completed",
+            "title": "'$download_type' download completed",
             "color": 7506394, # You can change the color of the left hand stripe here
             "fields": [
                 {
                     "name": "Torrent",
-                    "value": "'"$torrent_name"'"
+                    "value": "'$torrent_name'"
                 },
                 {
                     "name": "Size",
-                    "value": "'"$size_message"'",
+                    "value": "'$size_message'",
                     "inline": true
                 },
                 {
                     "name": "Files",
-                    "value": "'"$files"'",
+                    "value": "'$files'",
                     "inline": true
                 },
                 {
                     "name": "Tracker",
-                    "value": "'"$tracker"'"
+                    "value": "'$tracker'"
                 },
                 {
                     "name": "Save Path",
-                    "value": "'"$path"'"
+                    "value": "'$path'"
                 }
             ]
         }
