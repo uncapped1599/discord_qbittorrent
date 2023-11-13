@@ -3,7 +3,7 @@
 # Discord webhook details
 discord_webhook_url="https://discord.com/api/webhooks/XXXXXXXXXXXX"  # Update with your Discord webhook URL
 
-# Get variables from qBitTorrent
+# Get variables from qBitTorrent. Remember to make sure these align with your qBittorrent variables passed in settings.
 torrent_name="$1"
 size="$2"
 files="$3"
@@ -72,6 +72,7 @@ else
 fi
 
 # Construct the JSON payload for Discord
+# You can change the color of the left hand stripe of the notification using the "color" field. 
 payload='{
     "embeds": [
         {
@@ -80,7 +81,7 @@ payload='{
                 "icon_url": "https://i.imgur.com/6LTKLgZ.jpg"
             },
             "title": "'$download_type' download completed",
-            "color": 7506394, # You can change the color of the left hand stripe here
+            "color": 7506394,
             "fields": [
                 {
                     "name": "Torrent",
