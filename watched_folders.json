@@ -1,0 +1,91 @@
+{
+    "/path/watches/watch4kMovies": {
+        "add_torrent_params": {
+            "category": "4K movies",
+            "download_limit": -1,
+            "download_path": "",
+            "inactive_seeding_time_limit": -2,
+            "operating_mode": "AutoManaged",
+            "ratio_limit": -2,
+            "save_path": "/torrents/complete4k",
+            "seeding_time_limit": -2,
+            "skip_checking": false,
+            "tags": [
+            ],
+            "upload_limit": -1,
+            "use_auto_tmm": false
+        },
+        "recursive": false
+    },
+    "/path/watches/watchAlt": {
+        "add_torrent_params": {
+            "category": "alt",
+            "download_limit": -1,
+            "download_path": "",
+            "inactive_seeding_time_limit": -2,
+            "operating_mode": "AutoManaged",
+            "ratio_limit": -2,
+            "save_path": "/torrents/completeAlt",
+            "seeding_time_limit": -2,
+            "skip_checking": false,
+            "tags": [
+            ],
+            "upload_limit": -1,
+            "use_auto_tmm": false
+        },
+        "recursive": false
+    },
+    "/path/watches/watchBooks": {
+        "add_torrent_params": {
+            "category": "books",
+            "download_limit": -1,
+            "download_path": "",
+            "inactive_seeding_time_limit": -2,
+            "operating_mode": "AutoManaged",
+            "ratio_limit": -2,
+            "save_path": "/torrents/completeBooks",
+            "seeding_time_limit": -2,
+            "skip_checking": false,
+            "tags": [
+            ],
+            "upload_limit": -1,
+            "use_auto_tmm": false
+        },
+        "recursive": false
+    },
+    "/path/watches/watchMovies": {
+        "add_torrent_params": {
+            "category": "",
+            "download_limit": -1,
+            "download_path": "",
+            "inactive_seeding_time_limit": -2,
+            "operating_mode": "AutoManaged",
+            "ratio_limit": -2,
+            "save_path": "",
+            "seeding_time_limit": -2,
+            "skip_checking": false,
+            "tags": [
+            ],
+            "upload_limit": -1
+        },
+        "recursive": false
+    },
+    "/path/watches/watchTV": {
+        "add_torrent_params": {
+            "category": "tv",
+            "download_limit": -1,
+            "download_path": "",
+            "inactive_seeding_time_limit": -2,
+            "operating_mode": "AutoManaged",
+            "ratio_limit": -2,
+            "save_path": "/tv-torrents/completeTV",
+            "seeding_time_limit": -2,
+            "skip_checking": false,
+            "tags": [
+            ],
+            "upload_limit": -1,
+            "use_auto_tmm": false
+        },
+        "recursive": false
+    }
+}
