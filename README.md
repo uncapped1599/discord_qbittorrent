@@ -24,7 +24,7 @@ This is a simple bash script for sending notifications to a Discord webhook for 
 7. Done!
 
 ## Tip: adding categories to watched folders in qBittorrent (docker)
-If you're using qBittorrent through [linuxserver's container](https://hub.docker.com/r/linuxserver/qbittorrent), the webUI doesn't surface a way to add categories to watched folders. To do this, you have to edit the `watched_folders.json` file located in the containers config folder. The path will be something like `containerConfig/qbittorrent/qBittorrent/watched_folders.json`.
+If you're using qBittorrent through [linuxserver's container](https://hub.docker.com/r/linuxserver/qbittorrent), the webUI doesn't surface a way to add categories to watched folders. To do this, you have to edit the `watched_folders.json` file located in the containers config folder. The path will be something like `containerConfig/qbittorrent/qBittorrent/watched_folders.json`. An example is provided in the repo.
 
 ## Using on Synology systems
 See this [issue](https://github.com/uncapped1599/discord_qbittorrent/issues/1). The bc package is not included with Synology so you will have to adapt the script by removing the `bc` related functions or find ways to install bc via a package manager.
