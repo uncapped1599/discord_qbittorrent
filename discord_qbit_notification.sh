@@ -13,19 +13,19 @@ path="$6"
 
 # Function to convert size from bytes to megabytes (MB)
 calculate_size_in_mb() {
-    size_in_mb=$(bc <<< "scale=2; $size / (1024 * 1024)")
+    size_in_mb=$((size / (1024 * 1024)))
     echo "$size_in_mb MB"
 }
 
 # Function to convert size from bytes to gigabytes (GB)
 calculate_size_in_gb() {
-    size_in_gb=$(bc <<< "scale=2; $size / (1024 * 1024 * 1024)")
+    size_in_gb=$((size / (1024 * 1024 * 1024)))
     echo "$size_in_gb GB"
 }
 
 # Function to convert size from bytes to kilobytes (KB)
 calculate_size_in_kb() {
-    size_in_kb=$(bc <<< "scale=2; $size / 1024")
+    size_in_kb=$((size / 1024))
     echo "$size_in_kb KB"
 }
 
