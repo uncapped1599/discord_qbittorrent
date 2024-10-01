@@ -11,7 +11,8 @@ tracker="$4"
 category="$5"
 path="$6"
 
-# Function to convert size from bytes into something human readablecalculate_size() {
+# Function to convert size from bytes into something human readable
+calculate_size() {
     size=$(echo $size | numfmt --to=iec)
     echo "$size"
 }
