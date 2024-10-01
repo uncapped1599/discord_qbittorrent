@@ -11,22 +11,10 @@ tracker="$4"
 category="$5"
 path="$6"
 
-# Function to convert size from bytes to megabytes (MB)
-calculate_size_in_mb() {
-    size_in_mb=$((size / (1024 * 1024)))
-    echo "$size_in_mb MB"
-}
-
-# Function to convert size from bytes to gigabytes (GB)
-calculate_size_in_gb() {
-    size_in_gb=$((size / (1024 * 1024 * 1024)))
-    echo "$size_in_gb GB"
-}
-
-# Function to convert size from bytes to kilobytes (KB)
-calculate_size_in_kb() {
-    size_in_kb=$((size / 1024))
-    echo "$size_in_kb KB"
+# Function to convert size from bytes into something human readable
+calculate_size() {
+    size=$(echo $size | numfmt --to=iec)
+    echo "$size"
 }
 
 # Determine download type based on the category. 
@@ -63,13 +51,8 @@ case "$category" in
 esac
 
 # Calculate the size message based on the size in megabytes, kilobytes, or gigabytes
-if (( size < 1024 * 1024 )); then
-    size_message=$(calculate_size_in_kb)
-elif (( size < 1024 * 1024 * 1024 )); then
-    size_message=$(calculate_size_in_mb)
-else
-    size_message=$(calculate_size_in_gb)
-fi
+size_message=$(calculate_size)
+
 
 # Construct the JSON payload for Discord
 # You can change the color of the left hand stripe of the notification using the "color" field. 
